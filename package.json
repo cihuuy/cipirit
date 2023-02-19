@@ -2,7 +2,7 @@
   "name": "my-node-app",
   "version": "1.0.0",
   "description": "My Node.js application",
-  "main": "index.js",
+  "main": "node index.js",
   "dependencies": {
     "fs": "^0.0.1-security",
     "https": "^1.0.0",
